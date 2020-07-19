@@ -99,11 +99,12 @@ jobs:
           # 
 
           # 编译x64固件:
-          # cat >> .config <<EOF
-          # CONFIG_TARGET_x86=y
-          # CONFIG_TARGET_x86_64=y
-          # CONFIG_TARGET_x86_64_Generic=y
-          # EOF
+          cat >> .config <<EOF
+          CONFIG_TARGET_ar71xx=y
+          CONFIG_TARGET_ar71xx_tiny=y
+          CONFIG_TARGET_ar71xx_tiny_DEVICE_tl-wr802n-v1=y
+          CONFIG_TARGET_ar71xx_tiny_DEVICE_tl-wr802n-v1=y
+          EOF
 
           # 固件压缩:
           # cat >> .config <<EOF
